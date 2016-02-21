@@ -4,7 +4,7 @@ lightweight VERGE client for connecting
 ------------------------------------------------
 to the XVG Tor Electrum Server
 ------------------------------------------------
-![Electrum-XVG](https://raw.githubusercontent.com/xvg/electrum-xvg-tor/master/electrumlogo.png)
+![Electrum-XVG](https://raw.githubusercontent.com/vergecurrency/electrum-xvg-tor/master/electrumlogo.png)
 
 Licence: GNU GPL v3
 
@@ -12,7 +12,7 @@ Authors: sunerok, bitspill & whit3water
 
 Language: Python
 
-Homepage: http://electrum-xvg.space/
+Homepage: http://VERGEcurrency.com/
 
 
 1.a) GETTING STARTED WITH UBUNTU/LINUX
