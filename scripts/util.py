@@ -7,7 +7,7 @@ from electrum_xvg.network import filter_protocol, parse_servers
 def get_peers():
     # 1. start interface and wait for connection
     q = Queue.Queue()
-    interface = electrum.Interface('gwnsim34tqzzl7u5.onion:50001:s', q)
+    interface = electrum.Interface('vmb3ezwu3szckcqf.onion:50001:s', q)
     interface.start()
     i, r = q.get()
     if not interface.is_connected():

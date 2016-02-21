@@ -62,9 +62,9 @@ setup(
     scripts=['electrum-xvg'],
     data_files=data_files,
     description="Lightweight VERGE Wallet",
-    author="xvgDEV",
+    author="vergeDEV",
     author_email="xvgcoin@twitter",
     license="GNU GPLv3",
-    url="http://electrum-xvg.space / http://xvgzaikebne3va.onion",
+    url="http://VERGEcurrency.com",
     long_description="""Lightweight VERGE Wallet"""
 )

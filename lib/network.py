@@ -17,7 +17,7 @@ from blockchain import Blockchain
 DEFAULT_PORTS = {'t':'50001', 's':'50002', 'h':'8081', 'g':'8082'}
 
 DEFAULT_SERVERS = {
-    'gwnsim34tqzzl7u5.onion': DEFAULT_PORTS,
+    'vmb3ezwu3szckcqf.onion': DEFAULT_PORTS,
 }
 
 NODES_RETRY_INTERVAL = 60
