@@ -45,7 +45,7 @@ To run Electrum from this directory, just do:
 
 To start Electrum from your web browser, see
 --------------------------------------------
-http://electrum-xvg.space/VERGE_URIs.html
+http://electrum-verge.xyz/Verge_URIs.html
 
 To update your copy of the electrum client:
 -------------------------------------------
