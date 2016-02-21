@@ -1,5 +1,5 @@
 """
-py2app/py2exe build script for Electrum DogecoinDark
+py2app/py2exe build script for Electrum VERGE
 
 Usage (Mac OS X):
      python setup.py py2app
@@ -18,8 +18,8 @@ from lib.util import print_error
 from lib.version import ELECTRUM_VERSION as version
 
 
-name = "Electrum-DOGED"
-mainscript = 'electrum-doged'
+name = "Electrum-XVG"
+mainscript = 'electrum-xvg'
 
 if sys.version_info[:3] < (2, 6, 0):
     print_error("Error: " + name + " requires Python version >= 2.6.0...")

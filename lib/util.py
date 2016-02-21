@@ -93,13 +93,13 @@ def profiler(func):
 
 def user_dir():
     if "HOME" in os.environ:
-        return os.path.join(os.environ["HOME"], ".electrum-doged")
+        return os.path.join(os.environ["HOME"], ".electrum-xvg")
     elif "APPDATA" in os.environ:
-        return os.path.join(os.environ["APPDATA"], "Electrum-DOGED")
+        return os.path.join(os.environ["APPDATA"], "Electrum-XVG")
     elif "LOCALAPPDATA" in os.environ:
-        return os.path.join(os.environ["LOCALAPPDATA"], "Electrum-DOGED")
+        return os.path.join(os.environ["LOCALAPPDATA"], "Electrum-XVG")
     elif 'ANDROID_DATA' in os.environ:
-        return "/sdcard/electrum-doged/"
+        return "/sdcard/electrum-xvg/"
     else:
         #raise Exception("No home directory found in environment variables.")
         return
@@ -189,12 +189,12 @@ def age(from_date, since_date = None, target_tz=None, include_seconds=False):
         return "over %d years ago" % (round(distance_in_minutes / 525600))
 
 block_explorer_info = {
-    'blockexperts.com/doged/': ('http://blockexperts.com/doged/',
+    'blockexperts.com/xvg/': ('http://blockexperts.com/xvg/',
                         {'tx': 'tx', 'addr': 'address'}),
 }
 
 def block_explorer(config):
-    return config.get('block_explorer', 'blockexperts.com/doged/')
+    return config.get('block_explorer', 'blockexperts.com/xvg/')
 
 def block_explorer_tuple(config):
     return block_explorer_info.get(block_explorer(config))
@@ -222,7 +222,7 @@ def parse_URI(uri):
         return uri, None, None, None, None
 
     u = urlparse.urlparse(uri)
-    assert u.scheme == 'dogecoindark'
+    assert u.scheme == 'verge'
 
     address = u.path
 
@@ -272,7 +272,7 @@ def create_URI(addr, amount, message):
         if type(message) == unicode:
             message = message.encode('utf8')
         query.append('message=%s'%urllib.quote(message))
-    p = urlparse.ParseResult(scheme='dogecoindark', netloc='', path=addr, params='', query='&'.join(query), fragment='')
+    p = urlparse.ParseResult(scheme='verge', netloc='', path=addr, params='', query='&'.join(query), fragment='')
     return urlparse.urlunparse(p)
 
 

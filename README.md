@@ -1,10 +1,10 @@
-Electrum-DOGED for TOR - 
+Electrum-XVG for TOR - 
 ------------------------------------------------
-lightweight DogecoinDark client for connecting 
+lightweight VERGE client for connecting 
 ------------------------------------------------
-to the DOGED Tor Electrum Server
+to the XVG Tor Electrum Server
 ------------------------------------------------
-![Electrum-DOGED](https://raw.githubusercontent.com/doged/electrum-doged-tor/master/electrumlogo.png)
+![Electrum-XVG](https://raw.githubusercontent.com/xvg/electrum-xvg-tor/master/electrumlogo.png)
 
 Licence: GNU GPL v3
 
@@ -12,7 +12,7 @@ Authors: sunerok, bitspill & whit3water
 
 Language: Python
 
-Homepage: http://electrum-doged.space/
+Homepage: http://electrum-xvg.space/
 
 
 1.a) GETTING STARTED WITH UBUNTU/LINUX
@@ -33,7 +33,7 @@ sudo apt-get install git pyqt4-dev-tools python-pip python-dev python-slowaes py
 
 sudo pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode
 
-git clone https://github.com/doged/electrum-doged-tor && cd electrum-doged-tor
+git clone https://github.com/xvg/electrum-xvg-tor && cd electrum-xvg-tor
 
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
 
@@ -41,15 +41,15 @@ sudo python setup.py install
 
 To run Electrum from this directory, just do:
 ---------------------------------------------
-  ./electrum-doged
+  ./electrum-xvg
 
 To start Electrum from your web browser, see
 --------------------------------------------
-http://electrum-doged.space/DogecoinDark_URIs.html
+http://electrum-xvg.space/VERGE_URIs.html
 
 To update your copy of the electrum client:
 -------------------------------------------
-cd electrum-doged
+cd electrum-xvg
 
 git pull
 
@@ -59,7 +59,7 @@ sudo python setup.py install
 ------------------
 
 -download this repo as a zip and extract it to where you would like it to run from. 
-https://github.com/doged/electrum-doged/archive/master.zip
+https://github.com/xvg/electrum-xvg/archive/master.zip
 
 -download python 2.7 for windows here: https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
 
@@ -67,7 +67,7 @@ https://github.com/doged/electrum-doged/archive/master.zip
 
 -download python qt4: http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.3/PyQt4-4.11.3-gpl-Py2.7-Qt4.8.6-x64.exe
 
--then in ms visual studio command prompt, go into the directory electrum-doged:
+-then in ms visual studio command prompt, go into the directory electrum-xvg:
 
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
 
@@ -75,7 +75,7 @@ py -m pip install pip pyasn1 pyasn1-modules pbkdf2 tlslite qrcode ecdsa ltc_scry
 
 py setup.py install
 
-py electrum-doged
+py electrum-xvg
 
 1c) INSTALLING WITH MAC OSX
 -----------------
@@ -88,7 +88,7 @@ pip intall slowaes
 
 python setup.py build
 
-Modify electrum-doged and change python2 to python in the first line
+Modify electrum-xvg and change python2 to python in the first line
 
 sudo python setup.py install
 
@@ -96,7 +96,7 @@ then install tor and modify the torrc file, by removing the # from in front of S
 
 restart tor, then launch wallet by 
 
-py electrum-doged
+py electrum-xvg
 
 
 2. HOW OFFICIAL PACKAGES ARE CREATED
@@ -118,7 +118,7 @@ On Mac OS X:
   
   ARCHFLAGS="-arch i386 -arch x86_64" sudo python setup-release.py py2app --includes sip
 
-  sudo hdiutil create -fs HFS+ -volname "Electrum-DOGED" -srcfolder dist/Electrum-DOGED.app dist/electrum-doged-VERSION-macosx.dmg
+  sudo hdiutil create -fs HFS+ -volname "Electrum-XVG" -srcfolder dist/Electrum-XVG.app dist/electrum-xvg-VERSION-macosx.dmg
 
 
-[![Visit our IRC Chat!](https://kiwiirc.com/buttons/irc.freenode.net/dogecoindark.png)](https://kiwiirc.com/client/irc.freenode.net/?nick=doged|?&theme=cli#dogecoindark)
+[![Visit our IRC Chat!](https://kiwiirc.com/buttons/irc.freenode.net/verge.png)](https://kiwiirc.com/client/irc.freenode.net/?nick=xvg|?&theme=cli#verge)

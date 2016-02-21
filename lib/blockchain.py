@@ -36,7 +36,7 @@ class Blockchain(util.DaemonThread):
         self.config = config
         self.network = network
         self.lock = threading.Lock()
-        self.headers_url = 'http://electrum-doged.space/blockchain_headers'
+        self.headers_url = 'http://electrum-xvg.space/blockchain_headers'
         self.queue = Queue.Queue()
         self.local_height = 0
         self.set_local_height()
@@ -230,7 +230,7 @@ class Blockchain(util.DaemonThread):
         max_target = 0x00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         if index == 0: return 0x1e0ffff0, 0x00000FFFF0000000000000000000000000000000000000000000000000000000
 
-        # DogecoinDark: go back the full period unless it's the first retarget
+        # VERGE: go back the full period unless it's the first retarget
         if index == 1:
             first = self.read_header(0)
         else:
