@@ -14,6 +14,7 @@ Language: Python
 
 Homepage: http://VERGEcurrency.com/
 
+Download TOR: https://www.torproject.org/download/download
 
 1.a) GETTING STARTED WITH UBUNTU/LINUX
 ------------------
