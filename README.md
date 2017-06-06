@@ -34,7 +34,7 @@ sudo apt-get install git pyqt4-dev-tools python-pip python-dev python-slowaes py
 
 sudo pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode
 
-git clone https://github.com/xvg/electrum-xvg-tor && cd electrum-xvg-tor
+git clone https://github.com/vergecurrency/electrum-xvg-tor && cd electrum-xvg-tor
 
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
 
@@ -60,7 +60,7 @@ sudo python setup.py install
 ------------------
 
 -download this repo as a zip and extract it to where you would like it to run from. 
-https://github.com/xvg/electrum-xvg/archive/master.zip
+https://github.com/vergecurrency/electrum-xvg/archive/master.zip
 
 -download python 2.7 for windows here: https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
 
