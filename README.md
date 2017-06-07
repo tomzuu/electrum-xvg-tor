@@ -22,6 +22,8 @@ sudo apt-get update
 
 sudo apt-get install tor
 
+sudo service tor start && sudo service tor stop
+
 now go to /etc/tor/ and edit the torrc file. (you can use sudo nano torrc)
 
 you just need to remove the # before the line that starts with SocksPort 9050
