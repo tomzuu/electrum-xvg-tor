@@ -7,7 +7,7 @@
 
 [client]
 server = qz6pnufyqjexudq6.onion:50001:t
-proxy = 127.0.0.1:9050
+proxy = 127.0.0.1:9150
 gap_limit = 5
 # booleans use python syntax
 use_change = True
