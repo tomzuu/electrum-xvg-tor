@@ -93,13 +93,13 @@ def profiler(func):
 
 def user_dir():
     if "HOME" in os.environ:
-        return os.path.join(os.environ["HOME"], ".electrum-xvg")
+        return os.path.join(os.environ["HOME"], ".electrum-xvg-tor")
     elif "APPDATA" in os.environ:
-        return os.path.join(os.environ["APPDATA"], "Electrum-XVG")
+        return os.path.join(os.environ["APPDATA"], "Electrum-XVG-tor")
     elif "LOCALAPPDATA" in os.environ:
-        return os.path.join(os.environ["LOCALAPPDATA"], "Electrum-XVG")
+        return os.path.join(os.environ["LOCALAPPDATA"], "Electrum-XVG-tor")
     elif 'ANDROID_DATA' in os.environ:
-        return "/sdcard/electrum-xvg/"
+        return "/sdcard/electrum-xvg-tor/"
     else:
         #raise Exception("No home directory found in environment variables.")
         return
