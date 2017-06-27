@@ -20,6 +20,8 @@ Download TOR: https://www.torproject.org/download/download
 
 For binary windows release, just run Tor, and then run the electrum .exe
 
+![electrum-windows](http://i.imgur.com/E4zj9JL.png)
+
 1.a) GETTING STARTED WITH UBUNTU/LINUX
 ------------------
 sudo apt-get update
