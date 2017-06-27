@@ -6,6 +6,8 @@ to the XVG Tor Electrum Server
 ------------------------------------------------
 ![Electrum-XVG](https://raw.githubusercontent.com/vergecurrency/electrum-xvg-tor/master/electrumlogo.png)
 
+[![Build Status](https://travis-ci.org/vergecurrency/electrum-xvg-tor.svg?branch=master)](https://travis-ci.org/vergecurrency/electrum-xvg-tor)
+
 Licence: GNU GPL v3
 
 Authors: sunerok, bitspill & whit3water
