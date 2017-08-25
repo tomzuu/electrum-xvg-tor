@@ -431,6 +431,7 @@ class ElectrumWindow(QMainWindow):
 
     def show_report_bug(self):
         QMessageBox.information(self, "Electrum-XVG - " + _("Reporting Bugs"),
+            _("Please report any bugs as issues on github:")+" <a href=\"https://github.com/vergecurrency/electrum-xvg-tor/issues\">https://github.com/vergecurrency/electrum-xvg-tor/issues</a>")
 
 
     def notify_transactions(self):

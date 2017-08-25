@@ -62,6 +62,7 @@ setup(
     },
     scripts=['electrum-xvg'],
     data_files=data_files,
+    description="Lightweight Verge tOR Wallet",
     author="sunerok",
     author_email="twitter.com/vergecurrency",
     license="GNU GPLv3",
