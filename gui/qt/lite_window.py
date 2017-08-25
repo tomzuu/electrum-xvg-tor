@@ -36,7 +36,7 @@ import shutil
 
 from util import *
 
-bitcoin = lambda v: v * 100000000
+bitcoin = lambda v: v * COIN
 
 def IconButton(filename, parent=None):
     pixmap = QPixmap(filename)
@@ -140,7 +140,7 @@ class MiniWindow(QDialog):
 
         # Bitcoin address code
         self.address_input = QLineEdit()
-        self.address_input.setPlaceholderText(_("Enter a VERGE address or contact"))
+        self.address_input.setPlaceholderText(_("Enter a Verge address or contact"))
         self.address_input.setObjectName("address_input")
 
         self.address_input.setFocusPolicy(Qt.ClickFocus)
@@ -308,12 +308,15 @@ class MiniWindow(QDialog):
 
     def pay_from_URI(self, URI):
         try:
-            dest_address, amount, label, message, request_url = util.parse_URI(URI)
+            out = util.parse_URI(URI)
         except:
             return
-        self.address_input.setText(dest_address)
-        self.address_field_changed(dest_address)
-        self.amount_input.setText(str(amount))
+        address = out.get('address')
+        amount = out.get('amount')
+        amount_text = str(D(amount) / (10**self.actuator.g.decimal_point))
+        self.address_input.setText(address)
+        self.address_field_changed(address)
+        self.amount_input.setText(amount_text)
 
     def activate(self):
         pass
@@ -457,7 +460,7 @@ class MiniWindow(QDialog):
 
 
     def the_website(self):
-        webbrowser.open("http://electrum-xvg.space")
+        webbrowser.open("https://VergeCurrency.com")
 
 
     def toggle_receiving_layout(self, toggle_state):
@@ -573,7 +576,7 @@ class ReceivePopup(QDialog):
         self.close()
 
     def setup(self, address):
-        label = QLabel(_("Copied your VERGE address to the clipboard!"))
+        label = QLabel(_("Copied your Verge address to the clipboard!"))
         address_display = QLineEdit(address)
         address_display.setReadOnly(True)
         resize_line_edit_width(address_display, address)
@@ -583,7 +586,7 @@ class ReceivePopup(QDialog):
         main_layout.addWidget(address_display)
 
         self.setMouseTracking(True)
-        self.setWindowTitle("Electrum - " + _("Receive VERGE payment"))
+        self.setWindowTitle("Electrum - " + _("Receive Verge payment"))
         self.setWindowFlags(Qt.Window|Qt.FramelessWindowHint|
                             Qt.MSWindowsFixedSizeDialogHint)
         self.layout().setSizeConstraint(QLayout.SetFixedSize)
@@ -695,7 +698,7 @@ class MiniActuator:
 
         if dest_address is None or not is_valid(dest_address):
             QMessageBox.warning(parent_window, _('Error'),
-                _('Invalid VERGE Address') + ':\n' + address, _('OK'))
+                _('Invalid Verge Address') + ':\n' + address, _('OK'))
             return False
 
         amount = D(unicode(amount)) * (10*self.g.decimal_point)

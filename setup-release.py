@@ -1,5 +1,5 @@
 """
-py2app/py2exe build script for Electrum VERGE
+py2app/py2exe build script for Electrum Verge
 
 Usage (Mac OS X):
      python setup.py py2app

@@ -34,7 +34,7 @@ setup(
         'pbkdf2',
         'requests',
         'qrcode',
-        'ltc_scrypt',
+		'ltc_scrypt',
         'protobuf',
         'tlslite',
         'dnspython',
@@ -47,6 +47,7 @@ setup(
     packages=['electrum_xvg','electrum_xvg_gui','electrum_xvg_gui.qt','electrum_xvg_plugins'],
     package_data={
         'electrum_xvg': [
+            'www/index.html',
             'wordlist/*.txt',
             'locale/*/LC_MESSAGES/electrum.mo',
         ],
@@ -61,10 +62,9 @@ setup(
     },
     scripts=['electrum-xvg'],
     data_files=data_files,
-    description="Lightweight VERGE Wallet",
-    author="vergeDEV",
-    author_email="xvgcoin@twitter",
+    author="sunerok",
+    author_email="twitter.com/vergecurrency",
     license="GNU GPLv3",
-    url="http://VERGEcurrency.com",
-    long_description="""Lightweight VERGE Wallet"""
+    url="https://vergecurrency.com",
+    long_description="""Lightweight Verge Wallet"""
 )

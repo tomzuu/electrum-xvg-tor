@@ -25,7 +25,7 @@ import Queue
 import sqlite3
 
 import electrum_xvg as electrum
-electrum.set_verbosity(False)
+electrum_xvg.set_verbosity(False)
 
 import ConfigParser
 config = ConfigParser.ConfigParser()
