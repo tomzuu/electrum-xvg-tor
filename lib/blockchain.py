@@ -20,6 +20,7 @@
 import os
 import util
 from bitcoin import *
+from util import print_error, print_msg
 
 try:		
     from ltc_scrypt import getPoWHash		
