@@ -83,7 +83,7 @@ https://github.com/vergecurrency/electrum-xvg/archive/master.zip
 -download python qt4: http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.3/PyQt4-4.11.3-gpl-Py2.7-Qt4.8.6-x64.exe
 
 -then in ms visual studio command prompt, go into the directory electrum-xvg:
-
+```
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
 
 py -m pip install pip pyasn1 pyasn1-modules pbkdf2 tlslite qrcode ecdsa ltc_scrypt pyrcc
@@ -91,7 +91,7 @@ py -m pip install pip pyasn1 pyasn1-modules pbkdf2 tlslite qrcode ecdsa ltc_scry
 py setup.py install
 
 py electrum-xvg
-
+```
 1c) INSTALLING WITH MAC OSX
 -----------------
 
