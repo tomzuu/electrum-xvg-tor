@@ -24,12 +24,13 @@ For binary windows release, just run Tor, and then run the electrum .exe
 
 1.a) GETTING STARTED WITH UBUNTU/LINUX
 ------------------
+```
 sudo apt-get update
 
 sudo apt-get install tor
 
 sudo service tor start && sudo service tor stop
-
+```
 now go to /etc/tor/ and edit the torrc file. (you can use sudo nano torrc)
 
 you just need to remove the # before the line that starts with SocksPort 9050
@@ -37,7 +38,7 @@ you just need to remove the # before the line that starts with SocksPort 9050
 then save torrc, and go back to command prompt and type sudo service tor restart.
 
 now we install the electrum wallet!
-
+```
 sudo apt-get install git pyqt4-dev-tools python-pip python-dev python-slowaes python-pip
 
 sudo pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode
@@ -47,6 +48,7 @@ git clone https://github.com/vergecurrency/electrum-xvg-tor && cd electrum-xvg-t
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
 
 sudo python setup.py install
+```
 
 To run Electrum from this directory, just do:
 ---------------------------------------------
