@@ -52,7 +52,9 @@ sudo python setup.py install
 
 To run Electrum from this directory, just do:
 ---------------------------------------------
+  ```
   ./electrum-xvg
+  ```
 
 To start Electrum from your web browser, see
 --------------------------------------------
@@ -60,11 +62,13 @@ http://electrum-verge.xyz/Verge_URIs.html
 
 To update your copy of the electrum client:
 -------------------------------------------
+```
 cd electrum-xvg
 
 git pull
 
 sudo python setup.py install
+```
 
 1.b) GETTING STARTED WITH WINDOWS
 ------------------
@@ -94,42 +98,42 @@ py electrum-xvg
 install python if you dont already have it.
 
 https://www.python.org/ftp/python/2.7.10/python-2.7.10-macosx10.6.pkg
-
+```
 pip intall slowaes
 
 python setup.py build
-
+```
 Modify electrum-xvg and change python2 to python in the first line
-
+```
 sudo python setup.py install
-
+```
 then install tor and modify the torrc file, by removing the # from in front of SocksProxy, and change the 9150 to 9050.
 
 restart tor, then launch wallet by 
-
-py electrum-xvg
-
+```
+python electrum-xvg
+```
 
 2. HOW OFFICIAL PACKAGES ARE CREATED
 ------------------------------------
-
+```
 python mki18n.py
 
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
 
 python setup.py sdist --format=zip,gztar
-
+```
 On Mac OS X:
 
   # On port based installs
-  
+  ```
   sudo python setup-release.py py2app
-
+  ```
   # On brew installs
-  
+  ```
   ARCHFLAGS="-arch i386 -arch x86_64" sudo python setup-release.py py2app --includes sip
 
   sudo hdiutil create -fs HFS+ -volname "Electrum-XVG" -srcfolder dist/Electrum-XVG.app dist/electrum-xvg-VERSION-macosx.dmg
-
+  ```
 
 [![Visit our IRC Chat!](https://kiwiirc.com/buttons/irc.freenode.net/verge.png)](https://kiwiirc.com/client/irc.freenode.net/?nick=xvg|?&theme=cli#verge)
