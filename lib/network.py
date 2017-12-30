@@ -20,7 +20,8 @@ DEFAULT_PORTS = {'t':'50001', 's':'50002', 'h':'8081', 'g':'8082'}
 DEFAULT_SERVERS = {
     'gozwhpes24mi2bk7.onion':{'s':'50002','t':'50001'},
     'qz6pnufyqjexudq6.onion':{'s':'50002','t':'50001'},
-    't4c6rftkx673mlqv.onion':{'s':'50002','t':'50001'}
+    't4c6rftkx673mlqv.onion':{'s':'50002','t':'50001'},
+    'xvgmxegahtdodsar.onion':{'s':'50002','t':'50001'}
 }
 
 NODES_RETRY_INTERVAL = 60
