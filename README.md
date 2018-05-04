@@ -379,7 +379,7 @@ sudo easy_install pip
 
 ###### slowaes
 ```
-sudo pip intall slowaes
+sudo pip install slowaes
 ```
 
 ###### Tor
